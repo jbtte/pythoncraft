@@ -1,0 +1,30 @@
+/* styles/components/lesson_blocks/explanation_block.css (Adaptado para PythonCraft - Tema Minecraft) */
+
+/* Estilo base para todos os blocos de conteúdo injetados */
+/* Herdam de 'section' em global.css, mas ajustam-se aqui */
+.lesson-block {
+    margin-bottom: 30px; /* Espaço entre os blocos */
+    padding: 25px; /* Padding interno padrão */
+    border-radius: 8px; /* Bordas levemente arredondadas, mantendo o "pixelado" */
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2), 10px 10px 0px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    /* Borda padrão com cor de terra/madeira do Minecraft */
+    border: 3px solid var(--minecraft-dirt-brown); 
+    text-align: left; /* Alinhamento do texto */
+    position: relative; /* Para pseudo-elementos */
+    overflow: hidden; /* Para garantir que sombras/bordas internas fiquem dentro */
+    white-space: pre-wrap;
+}
+
+.lesson-block h2 { /* Títulos dentro dos blocos (Conceito, Resumo, etc.) */
+    font-family: var(--pixel-font);
+    font-size: 1.5em; /* Ligeiramente menor que o H2 da seção principal */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 5px; /* Espaço abaixo do título */
+    /* Linha sutil e pixelada abaixo do título */
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.1); 
+    /* Cor padrão para títulos internos (ex: Redstone ou Lava) */
+    color: var(--minecraft-lava-orange); 
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}

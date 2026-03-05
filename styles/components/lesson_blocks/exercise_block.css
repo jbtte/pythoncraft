@@ -1,0 +1,30 @@
+/* type: "exercise" - Para itens individuais de exercício */
+/* Nota: O container principal dos exercícios é .lesson-block--exercises-group */
+.exercise-item { /* Estilos para cada exercício individual */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco para cada item, como um pedaço de papel/bloco de anotação */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px; /* Espaço entre exercícios */
+    /* Borda discreta de pedra */
+    border: 2px solid var(--minecraft-stone-gray); 
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+.exercise-item p { /* Texto do prompt do exercício */
+    color: var(--text-dark);
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-shadow: none; /* Remover sombra forte aqui */
+}
+/* O botão e a dica já têm estilos próprios */
+
+/* type: "exercises-group" (Contêiner de todos os exercícios) */
+.lesson-block--exercises-group {
+    background-color: #FFE0B2; /* Laranja pálido, como um bloco de arenito ou argila */
+    /* Borda laranja forte, como lava ou redstone */
+    border-color: var(--minecraft-lava-orange); 
+    box-shadow: 6px 6px 0px var(--minecraft-lava-orange), 10px 10px 0px rgba(0,0,0,0.1);
+}
+.lesson-block--exercises-group h2 {
+    /* Título em vermelho, como redstone */
+    color: var(--minecraft-lava-orange); 
+}

@@ -1,0 +1,32 @@
+/* styles/components/back_to_map_button.css */
+
+.back-to-lesson-map-button { /* Nome da classe adaptado para o contexto */
+    display: inline-block;
+    padding: 12px 24px; /* Um pouco maior para se destacar */
+    background-color: var(--minecraft-grass-green); /* Cor de bloco de grama */
+    color: var(--text-light); /* Garante que o texto seja claro e visível no verde */
+    font-family: var(--minecraft-font); /* Fonte pixelada do Minecraft */
+    font-size: 1.1em; /* Um pouco maior para crianças */
+    text-decoration: none;
+    border-radius: 4px; /* Cantos levemente arredondados */
+    box-shadow: 4px 4px 0px var(--minecraft-dirt-brown); /* Sombra 3D */
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+    margin-top: 25px; /* Margem ajustada */
+    border: 3px solid var(--minecraft-dark-gray); /* Borda escura para profundidade */
+    cursor: pointer; /* Indica que é clicável */
+    text-transform: uppercase; /* Pode dar um toque de jogo */
+    letter-spacing: 1px;
+}
+
+.back-to-lesson-map-button:hover {
+    transform: translateY(-3px); /* Efeito de "pular" mais pronunciado no hover */
+    box-shadow: 6px 6px 0px var(--minecraft-dark-gray); /* Sombra mais forte */
+    background-color: var(--minecraft-dirt-brown); /* Mudar para cor de terra no hover */
+    color: var(--minecraft-gold-yellow); /* Texto dourado no hover, como barras de ouro */
+}
+
+.back-to-lesson-map-button:active {
+    transform: translateY(0); /* Botão "afunda" ao ser clicado */
+    box-shadow: 2px 2px 0px var(--minecraft-dark-gray);
+    background-color: var(--minecraft-stone-gray); /* Cor de pedra ao clicar */
+}

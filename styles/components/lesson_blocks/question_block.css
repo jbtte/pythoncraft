@@ -1,0 +1,23 @@
+/* type: "question" - Bloco de pergunta */
+.lesson-block--question {
+    background-color: #FFFFAA; /* Amarelo claro para perguntas, como um sinal */
+    /* Borda amarela mais forte, como bloco de ouro ou lâmpada de redstone */
+    border-color: var(--minecraft-block-yellow); 
+    border-style: dashed; /* Borda pontilhada */
+    box-shadow: 6px 6px 0px var(--minecraft-block-yellow), 10px 10px 0px rgba(0,0,0,0.1);
+    position: relative;
+}
+.lesson-block--question h2 {
+    /* Título em marrom, como o bloco de terra */
+    color: var(--minecraft-dirt-brown); 
+}
+.lesson-block--question::before {
+    content: '❓'; /* Ponto de interrogação como decorador (se o emoji for pixelado) */
+    /* Alternativa: content: url('/resources/images/minecraft-question-mark.png'); */
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.5;
+    pointer-events: none;
+}

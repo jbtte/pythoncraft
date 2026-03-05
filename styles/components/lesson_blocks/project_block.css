@@ -1,0 +1,40 @@
+/* type: "project" - Bloco de projeto */
+.lesson-block--project {
+    background-color: #FFDA61; /* Amarelo vibrante, como um pergaminho, mapa de tesouro ou ouro */
+    /* Borda marrom forte, como madeira ou terra */
+    border-color: var(--minecraft-dirt-brown); 
+    border-style: double; /* Borda dupla para dar um ar de importância */
+    border-width: 5px; /* Borda mais grossa */
+    box-shadow: 
+        10px 10px 0px rgba(0, 0, 0, 0.4), /* Sombra mais pronunciada para "flutuar" mais */
+        15px 15px 0px rgba(0, 0, 0, 0.2); /* Segunda sombra para profundidade */
+    padding: 35px; /* Mais padding interno para dar espaço */
+    margin-top: 40px; /* Mais espaço acima para separação */
+    position: relative; /* Para possíveis ícones ou decorações */
+    text-align: center; /* Centraliza o conteúdo */
+    overflow: hidden; /* Garante que nada vaze */
+  }
+.lesson-block--project h2 {
+    /* Título do projeto em vermelho, como redstone ou um objetivo importante */
+    color: var(--minecraft-lava-orange); 
+    font-family: var(--pixel-font);
+    font-size: 1.8em; /* Título maior */
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5); /* Sombra forte */
+    margin-bottom: 15px;
+    /* Linha tracejada vermelha, como redstone */
+    border-bottom: 2px dashed var(--minecraft-lava-orange); 
+    padding-bottom: 10px;
+}
+.lesson-block--project p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-dark); /* Texto em cor escura para boa legibilidade no amarelo */
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-shadow: 0.5px 0.5px 0px rgba(255, 255, 255, 0.7); /* Sombra sutil branca */
+}
+.lesson-block--project p strong { /* Negrito para o Objetivo: */
+    /* Cor azul para destacar o objetivo, como um diamante */
+    color: var(--minecraft-water-blue); 
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}

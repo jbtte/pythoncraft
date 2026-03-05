@@ -1,0 +1,39 @@
+/* type: "summary" - Bloco de resumo */
+.lesson-block--summary {
+    background-color: #E0FFD0; /* Verde claro, como uma folha ou bloco de mel */
+    /* Borda verde, como a grama ou folhas */
+    border-color: var(--minecraft-grass-green); 
+    box-shadow: 6px 6px 0px var(--minecraft-grass-green), 10px 10px 0px rgba(0,0,0,0.1);
+}
+.lesson-block--summary h2 {
+    /* Título em verde, como a grama ou esmeralda */
+    color: var(--minecraft-grass-green); 
+}
+.lesson-block--summary p {
+    font-weight: bold; /* Texto em negrito para o resumo */
+    color: var(--text-dark);
+}
+.lesson-block--summary p::before {
+    content: '✅'; /* Checkmark para cada item (se o emoji for pixelado) */
+    /* Alternativa: content: url('/resources/images/minecraft-checkmark.png'); */
+    margin-right: 5px;
+}
+/* Estilo para listas (se o resumo usar lista, como em day1.json) */
+.lesson-block--summary ul,
+.lesson-block--summary ol {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+.lesson-block--summary ul li::before,
+.lesson-block--summary ol li::before {
+    content: '✅'; /* Checkmark para cada item da lista (se o emoji for pixelado) */
+    /* Alternativa: content: url('/resources/images/minecraft-checkmark.png'); */
+    margin-right: 10px;
+    /* Cor verde, como a grama ou esmeralda */
+    color: var(--minecraft-grass-green); 
+    font-size: 1em;
+    position: static;
+    transform: none;
+    display: inline-block;
+}

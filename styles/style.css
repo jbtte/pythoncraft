@@ -6,6 +6,7 @@
 
 /* Componentes e seções gerais */
 @import url('components/video.css');
+@import url('components/back_to_map_button.css'); /* Estilos para o mapa de lições */
 @import url('components/button.css');
 @import url('components/footer.css');
 @import url('components/header.css');
@@ -14,11 +15,23 @@
 @import url('components/intro-videos.css');
 @import url('components/lesson_cards.css'); /* Estilos para lesson-card e lesson-container (index.html) */
 @import url('components/lesson_map_common.css');
-@import url('components/lessons_content_types.css');
-@import url('components/main_layout.css'); /* Estilos para o 'main' e seções gerais */
 @import url('components/reset_section.css'); 
 @import url('components/resource_cards.css'); /* Estilos para resource/game cards */
 @import url('components/video.css'); 
 
 /* Responsividade por último para sobrescrever seletivamente */
 @import url('base/responsive.css'); 
+
+/* Blocos de Conteúdo das Lições */
+@import url('./components/lesson_blocks/base_lesson_block.css');
+@import url('./components/lesson_blocks/explanation_block.css');
+@import url('./components/lesson_blocks/code_block.css');
+@import url('./components/lesson_blocks/question_block.css');
+@import url('./components/lesson_blocks/summary_block.css');
+@import url('./components/lesson_blocks/exercise_block.css');
+@import url('./components/lesson_blocks/project_block.css');
+@import url('./components/lesson_blocks/video_block.css');
+@import url('./components/lesson_blocks/image_block.css');
+@import url('./components/lesson_blocks/installation_block.css');
+@import url('./components/lesson_blocks/instruction_block.css');
+@import url('./components/lesson_blocks/celebration_block.css');

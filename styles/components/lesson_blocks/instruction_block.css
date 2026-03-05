@@ -1,0 +1,12 @@
+/* type: "instruction" - Bloco de instrução */
+.lesson-block--instruction {
+    background-color: #FFF0CC; /* Amarelo alaranjado claro para instruções, como um sinal de aviso */
+    /* Borda laranja/redstone */
+    border-color: var(--minecraft-lava-orange); 
+    border-style: dotted; /* Borda pontilhada para instrução */
+    box-shadow: 4px 4px 0px var(--minecraft-lava-orange);
+}
+.lesson-block--instruction h2 {
+    /* Título laranja/redstone */
+    color: var(--minecraft-lava-orange); 
+}

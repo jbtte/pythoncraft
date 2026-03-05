@@ -1,13 +1,11 @@
-/* styles/components/_header.css */
+/* styles/components/_header.css (Adaptado para PythonCraft - Tema Minecraft) */
 
 header {
-    background-color: var(--mario-sky-blue);
-    color: var(--text-light);
+    /* Cor de céu do Minecraft para o fundo do cabeçalho */
+    background-color: var(--minecraft-sky-blue);
+    color: var(--text-light); /* Texto claro */
     padding: 15px 20px;
-    /* border-bottom: 5px solid var(--mario-dirt-brown); */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-    /* z-index: 1000; */
-
+    
     display: flex;
     flex-direction: column; /* Organiza os filhos um abaixo do outro */
     align-items: center; /* Centraliza horizontalmente (h1 e o wrapper) */
@@ -17,6 +15,7 @@ header h1 {
     font-family: var(--pixel-font);
     font-size: 2em;
     margin: 0 auto 15px auto; /* 0px topo, auto lados (para centralizar), 15px inferior */
+    /* Sombra de texto para um efeito 3D pixelado */
     text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.4);
     white-space: normal;
     width: fit-content; /* Permite que o h1 seja centralizado como um bloco */
@@ -35,10 +34,13 @@ header h1 {
     
     position: sticky; /* Torna este container (menu + botão) sticky */
     top: 0; /* Gruda no topo da tela */
-    background-color: var(--mario-sky-blue); /* Fundo para quando ele estiver sticky */
+    /* Fundo para quando ele estiver sticky, usando cor de céu do Minecraft */
+    background-color: var(--minecraft-sky-blue); 
     padding: 10px 20px; /* Padding para a barra sticky */
-    border-bottom: 2px solid var(--mario-dirt-brown); /* Borda para a barra sticky */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Sombra para a barra sticky */
+    /* Borda inferior com cor de terra do Minecraft */
+    border-bottom: 2px solid var(--minecraft-dirt-brown); 
+    /* Sombra para a barra sticky */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); 
     z-index: 999; /* Z-index para ficar acima do conteúdo ao rolar, mas abaixo do h1 se ele deslizar */
 }
 
@@ -46,11 +48,14 @@ header h1 {
 .main-nav {
     width: auto; 
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* Fundo semi-transparente para destacar */
+    /* Fundo semi-transparente para destacar */
+    background-color: rgba(0, 0, 0, 0.3); 
     padding: 10px 0; /* Espaçamento interno */
-    border-top: 2px solid var(--mario-dirt-brown); /* Borda superior para separação */
-    border-bottom: 2px solid var(--mario-dirt-brown); /* Borda inferior */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidade */
+    /* Bordas com cor de terra do Minecraft para separação */
+    border-top: 2px solid var(--minecraft-dirt-brown); 
+    border-bottom: 2px solid var(--minecraft-dirt-brown); 
+    /* Sombra sutil para profundidade */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     border-radius: 5px;
     flex-shrink: 0;
 }
@@ -66,7 +71,7 @@ header h1 {
 
 .main-nav a {
     font-family: var(--pixel-font);
-    color: var(--text-light);
+    color: var(--text-light); /* Links em cor clara */
     text-decoration: none;
     font-size: 0.7em;
     padding: 5px 10px;
@@ -76,7 +81,8 @@ header h1 {
 }
 
 .main-nav a:hover {
-    border-color: var(--mario-block-yellow);
+    /* Borda e fundo com cores de bloco de ouro/amarelo do Minecraft no hover */
+    border-color: var(--minecraft-block-yellow); 
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }

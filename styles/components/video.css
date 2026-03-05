@@ -1,27 +1,34 @@
+/* styles/components/_video_section.css (Adaptado para PythonCraft - Tema Minecraft) */
 .video-section {
-    background-color: var(--mario-block-yellow); /* Um fundo que se destaca */
-    border: 4px solid var(--mario-dirt-brown);
-    border-radius: 8px;
+    /* Fundo com a cor de bloco de ouro/amarelo do Minecraft para destaque */
+    background-color: var(--minecraft-block-yellow);
+    /* Borda com cor de terra/madeira do Minecraft */
+    border: 4px solid var(--minecraft-dirt-brown);
+    border-radius: 8px; /* Bordas levemente arredondadas, como blocos */
     padding: 20px;
     margin: 40px auto; /* Espaçamento e centralização */
     max-width: 800px; /* Largura máxima para o conteúdo */
+    /* Sombra para dar profundidade de bloco */
     box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.4);
     text-align: center; /* Centraliza o texto e o vídeo */
 }
 
 .video-section h2 {
     font-family: var(--pixel-font);
+    /* Cor de texto escuro para contraste no fundo amarelo */
     color: var(--text-dark);
-    font-size: 1.8em;
+    /* Sombra de texto com cor clara para simular brilho/profundidade pixelada */
     text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
     margin-bottom: 20px;
 }
 
 .video-section p {
     font-family: 'Roboto', sans-serif;
-    color: black; /* Texto mais escuro para contraste no fundo amarelo */
+    /* Texto escuro para contraste no fundo amarelo */
+    color: var(--text-dark); 
     font-size: 1.1em;
     margin-bottom: 30px;
+    /* Sombra de texto com cor clara */
     text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
 }
 

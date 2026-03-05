@@ -1,107 +1,46 @@
 {
-  "title": "Dia 1 – Bem-vindo ao mundo da programação!",
+  "title": "Aula 1 – O computador diz \"olá!\"",
   "concepts": [
     {
-      "type": "explanation",
-      "heading": "Você vai ensinar o computador!",
-      "text": "Hoje começa sua jornada como programador! Você vai aprender a conversar com o computador e ensinar ele a fazer coisas incríveis: responder, contar piadas, fazer jogos e muito mais."
+      "heading": "Seu primeiro código em Python!",
+      "text": "Vamos aprender a fazer o computador falar com você. Usamos o comando <code>print()</code> para mostrar mensagens na tela.",
+      "code": "print(\"Olá, aventureiro!\")"
     },
     {
-      "type": "image",
-      "heading": "Seu primeiro código: Olá, mundo!",
-      "image_placeholder": "imagem de um terminal com código 'print(\"Olá, mundo!\")' em destaque",
-      "image_url": "resources/images/lesson_illustrations/lesson_01_hello.jpg"
-    },
-
-    {
-      "type": "explanation",
-      "heading": "O que é programar?",
-      "text": "Programar é escrever instruções que o computador entende. É como ensinar um robô a obedecer você. Vamos ver um exemplo?"
+      "heading": "O que está acontecendo aqui?",
+      "text": "O <code>print()</code> manda uma frase aparecer na tela. É como se o computador estivesse falando com você!"
     },
     {
-      "type": "code",
-      "heading": "Seu primeiro código",
-      "text": "Esse código manda o computador dizer 'Olá!'\n Copie e cole ele aqui do lado no 'Editor de Código Python'. Depois aperte 'Executar Código':",
-      "code": "print(\"Olá! Você já está programando!\")"
+      "heading": "Mudando a mensagem",
+      "text": "Você pode colocar qualquer coisa entre aspas. Por exemplo:",
+      "code": "print(\"Bem-vindo ao mundo das criaturas bobas!\")"
     },
     {
-      "type": "explanation",
-      "heading": "Onde vamos escrever nossos códigos?",
-      "text": "Vamos usar um programa especial chamado <b>Thonny</b>. Ele é como um caderno mágico onde escrevemos tudo o que queremos que o computador faça."
-    },
-    {
-      "type": "installation",
-      "heading": "Como instalar o Thonny?",
-      "text": "Se você ainda não tem o Thonny instalado, siga estes passos:",
-      "steps": [
-        "Acesse o site: https://thonny.org",
-        "Clique em 'Download' e escolha a versão do seu computador (Windows, Mac ou Linux)",
-        "Quando terminar de baixar, clique duas vezes no arquivo e siga as instruções na tela"
-      ],
-      "image_placeholder": "📷 (aqui você pode colocar uma imagem do site do Thonny)"
-    },
-    {
-      "type": "explanation",
-      "heading": "Conhecendo o Thonny",
-      "text": "Quando abrir o Thonny, você vai ver duas áreas importantes:",
-      "steps": [
-        "<b>Área de Código (em cima)</b> – é onde você vai escrever seus programas",
-        "<b>Shell (embaixo)</b> – é onde o computador responde para você"
-      ],
-      "image_placeholder": "📷 (adicione aqui uma imagem com setas mostrando as partes do Thonny)"
-    },
-    {
-      "type": "code",
-      "heading": "Escrevendo seu primeiro programa",
-      "text": "No espaço de cima (área de código), escreva essa linha:",
-      "code": "print(\"Olá, mundo!\")"
-    },
-    {
-      "type": "instruction",
-      "heading": "Como executar o código",
-      "text": "Agora clique no botão verde ▶️ lá no topo (ou aperte F5 no teclado). Você verá a frase aparecendo lá embaixo, no Shell.",
-      "image_placeholder": "📷 (imagem do botão 'Executar' no Thonny)"
-    },
-    {
-      "type": "celebration",
-      "heading": "Parabéns!",
-      "text": "Você executou seu primeiro código! 🎉 Pode contar para todo mundo: agora você é um programador!"
-    },
-    {
-      "type": "instruction",
-      "heading": "Salvando seu primeiro programa",
-      "text": "Clique em <b>Arquivo → Salvar como...</b>, escolha um lugar fácil (como a área de trabalho) e digite o nome <b>hello_world.py</b>. Não esqueça do final `.py` — isso mostra que é um arquivo de Python!",
-      "image_placeholder": "📷 (adicione aqui uma imagem do menu Arquivo → Salvar como...)"
-    },
-    {
-      "type": "summary",
-      "heading": "Resumo da aula",
-      "text": "✅ Você entendeu o que é programação\n✅ Instalou o Thonny (ou viu como instalar)\n✅ Escreveu e executou seu primeiro programa\n✅ Aprendeu a salvar seu código\n\nAmanhã tem mais! Vamos aprender a fazer o computador conversar com você 😄"
+      "heading": "Aprendizados da aula",
+      "text": "<ul>\n  <li>Como escrever seu primeiro programa</li>\n  <li>Entender o que <code>print()</code> faz</li>\n  <li>Ver o computador responder na tela</li>\n</ul>"
     }
   ],
   "exercises": [
     {
-      "type": "exercise",
-      "prompt": "1. Escreva outro código parecido, como:\n\n```python\nprint(\"Meu nome é Maria e eu adoro programar!\")\n```"
+      "prompt": "1. Escreva uma frase divertida usando <code>print()</code>.",
+      "code_hint": "print(\"Hoje é dia de sorvete mágico!\")"
     },
     {
-      "type": "exercise",
-      "prompt": "2. Salve este novo código com o nome <b>meu_nome.py</b>"
+      "prompt": "2. Escreva 3 frases diferentes. Faça o computador parecer animado!",
+      "code_hint": "print(\"Vamos começar a aventura!\")\nprint(\"Prepare seu teclado mágico!\")\nprint(\"3... 2... 1... Já!\")"
     },
     {
-      "type": "exercise",
-      "prompt": "3. Tente mudar o texto do print e execute de novo para ver o que acontece!"
+      "prompt": "3. Experimente trocar a frase por algo que você inventar.",
+      "code_hint": "print(\"Eu sou o computador Bobolito!\")"
     }
   ],
   "project": {
-    "type": "project",
-    "name": "Primeira Apresentação",
-    "description": "Crie um pequeno programa que mostre 3 frases diferentes sobre você. Exemplo:\n```python\nprint(\"Oi, eu sou a Sofia!\")\nprint(\"Tenho 12 anos.\")\nprint(\"Adoro chocolate!\")```",
-    "goal": "Praticar o uso do print() e salvar arquivos .py"
+    "name": "Computador dá boas-vindas com seu nome",
+    "description": "O computador vai dizer olá com uma mensagem personalizada usando seu nome.",
+    "goal": "Fazer um programa simples com 3 frases usando <code>print()</code> para deixar uma saudação divertida."
   },
-  "video_suggestion": {
-    "type": "video",
-    "text": "Veja esse vídeo explicando como instalar o Thonny e rodar o primeiro código:",
-    "url": "https://youtu.be/1wouN4iOUo0"
+  "media": {
+    "video_suggestion": "https://www.youtube.com/watch?v=O5nskjZ_GoI",
+    "visual_aid": "Imagem de um computador sorridente dizendo 'Olá!' com balões de fala"
   }
 }

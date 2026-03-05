@@ -1,0 +1,37 @@
+/* type: "code" - Bloco de código */
+.lesson-block--code {
+    background-color: #515C6B; /* Um cinza azulado médio/escuro, como um terminal ou console */
+    /* Borda um pouco mais clara e distinta, como metal ou pedra lapidada */
+    border-color: #7A8696; 
+    color: #F0F0F0; /* Texto claro padrão para o bloco */
+    box-shadow: 6px 6px 0px #7A8696, 10px 10px 0px rgba(0,0,0,0.15); /* Sombra correspondente */
+    padding: 15px;
+}
+.lesson-block--code h2 {
+    /* Título em amarelo, como uma tocha ou minério brilhante */
+    color: var(--minecraft-block-yellow); 
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+    border-bottom-color: rgba(255,255,255,0.1);
+}
+.lesson-block--code p {
+    color: #F0F0F0; /* COR CLARA (branco acinzentado) para contrastar com o fundo escuro */
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.5); /* Sombra escura para definir bem */
+    margin-bottom: 15px; /* Mantém a margem para separar do código */
+    font-size: 1em; /* Tamanho padrão, se precisar ajustar */
+}
+.lesson-block--code pre { /* Alvo: a tag <pre> que contém o <code> */
+    background-color: #000000; /* Fundo PRETO PURO para o código em si (como o console do jogo) */
+    border: 1px solid #FFFFFF; /* Borda BRANCA para delimitar */
+    border-radius: 4px; /* Bordas levemente arredondadas */
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5); /* Sombra interna mais forte */
+    overflow-x: auto;
+    margin: 0;
+}
+.lesson-block--code pre code { /* Estilo para o <code> dentro do <pre> */
+    color: #D4EDDA; /* Cor do texto do código (um verde claro, como texto de terminal) */
+    font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+    font-size: 0.9em;
+    line-height: 1.4;
+    text-align: left;
+}

@@ -1,11 +1,21 @@
 /* styles/base/_variables.css */
 :root {
-    --mario-sky-blue: #6495ED;
-    --mario-grass-green: #4CAF50;
-    --mario-dirt-brown: #8B4513;
-    --mario-block-yellow: #FFD700;
-    --mario-red: #FF4500;
-    --text-dark: #333;
-    --text-light: #F0F0F0;
+    /* Cores do Minecraft */
+    --minecraft-sky-blue: #78A7FF; 
+    --minecraft-grass-green: #598F4F; /* Usado para status "ready" */
+    --minecraft-dirt-brown: #7B553C; /* Usado para bordas e headers do IDE */
+    --minecraft-stone-gray: #808080;
+    --minecraft-lava-orange: #FF6600; /* Usado para títulos do IDE, status "error", e botão "run" */
+    --minecraft-water-blue: #3A83BF;
+    --minecraft-leaf-green: #6D9E5A;
+    --minecraft-block-yellow: #FFD700; /* Usado para status "loading" */
+
+    /* Cores de texto */
+    --text-dark: #2C2C2C;
+    --text-light: #EEEEEE; /* Usado para texto claro em fundos escuros */
+    
+    /* Fontes */
     --pixel-font: 'Press Start 2P', cursive;
+    --body-font: 'Roboto', sans-serif;
+    --code-font: 'Fira Code', 'Consolas', 'Monaco', monospace;
 }

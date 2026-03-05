@@ -1,15 +1,15 @@
-/* styles/components/lesson_cards.css - Para Python-Adventure (Tema Mario) */
+/* styles/components/lesson_cards.css - Para PythonCraft (Tema Minecraft) */
 .lesson-card {
   background-color: transparent; /* A imagem será o fundo principal */  
   border: none;
-    border-radius: 8px;
+    border-radius: 8px; /* Mantém um leve arredondamento para a sensação de bloco pixelado */
     padding: 15px;
     
-    /* Simula a borda mais grossa e o relevo */
+    /* Simula a borda mais grossa e o relevo de um bloco do Minecraft */
     box-shadow: 
         inset 2px 2px 5px rgba(0, 0, 0, 0.1), /* Leve sombra interna para profundidade */
-        4px 4px 0 #D6A44A, /* Borda sólida mais escura na direita e embaixo */
-        -2px -2px 0 #FFF2A9; /* Borda mais clara na esquerda e em cima para o brilho */
+        4px 4px 0 var(--minecraft-dirt-brown), /* Borda sólida mais escura na direita e embaixo (terra/madeira) */
+        -2px -2px 0 #FFF2A9; /* Borda mais clara na esquerda e em cima para o brilho (quase branco/creme) */
     
     transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
     
@@ -22,15 +22,15 @@
     cursor: pointer;
     text-align: center;
     width: auto;
-    max-width: 180px;
+    max-width: 180px; /* Mantém um tamanho razoável para os cartões */
     margin: 0 auto;
     overflow: hidden;
     
     /* Adiciona um overlay semi-transparente sobre a imagem para o texto ser legível */
-    /* A cor amarela do bloco será dada pelo overlay e pela imagem */
+    /* A cor amarela do bloco (caixa de interrogação) será dada pelo overlay e pela imagem */
     background-image: 
-        linear-gradient(rgba(255, 218, 97, 0.7), rgba(255, 218, 97, 0.7)), 
-        url('../../resources/images/question-mark-box.jpg'); /* Caminho para a sua imagem interna do bloco */
+        linear-gradient(rgba(255, 215, 0, 0.7), rgba(255, 215, 0, 0.7)), /* Overlay de cor de ouro/bloco "?" do Minecraft (hex: #FFD700) */
+        url('../../resources/images/minecraft-question-box.png'); /* Caminho para sua imagem de bloco de interrogação do Minecraft */
     background-size: cover ; /* Ajusta a imagem para cobrir todo o card */
     background-position: center center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
@@ -51,13 +51,13 @@
     opacity: 1;
     transition: none;
 
-    color: #FFFFFF; /* Mantido branco para o texto da fase */
+    color: var(--text-light); /* Mantido claro para o texto da fase, como o padrão de texto claro do Minecraft */
     text-shadow: 
-        1.5px 1.5px 0px #000000, 
-        -1.5px -1.5px 0px #000000,
-        1.5px -1.5px 0px #000000,
-        -1.5px 1.5px 0px #000000,
-        0 0 5px rgba(255, 255, 255, 0.7);
+        1.5px 1.5px 0px var(--text-dark-shadow), /* Sombra mais escura para o texto */
+        -1.5px -1.5px 0px var(--text-dark-shadow),
+        1.5px -1.5px 0px var(--text-dark-shadow),
+        -1.5px 1.5px 0px var(--text-dark-shadow),
+        0 0 5px rgba(255, 255, 255, 0.7); /* Brilho sutil */
 }
 
 .lesson-card p {
@@ -67,10 +67,10 @@
     opacity: 1; 
     margin-top: 5px;
     
-    color: #FFFFFF; /* Mantido branco para o parágrafo da fase */
+    color: var(--text-light); /* Mantido claro para o parágrafo da fase */
     text-shadow: 
-        1px 1px 0px #000000, 
-        -1px -1px 0px #000000;
+        1px 1px 0px var(--text-dark-shadow), 
+        -1px -1px 0px var(--text-dark-shadow);
 }
 
 /* Status icon para ficar sobre a caixa */
@@ -83,9 +83,9 @@
     right: -12px;
     background-size: contain;
     background-repeat: no-repeat;
-    /* Adicione as imagens de status aqui */
-    /* .status-icon.unlocked { background-image: url('../resources/images/star-icon.png'); } */
-    /* .status-icon.locked { background-image: url('../resources/images/lock-icon.png'); } */
+    /* Adicione as imagens de status aqui (ex: estrela para concluído, cadeado para bloqueado) */
+    /* .status-icon.unlocked { background-image: url('../../resources/images/minecraft-star-icon.png'); } */
+    /* .status-icon.locked { background-image: url('../../resources/images/minecraft-lock-icon.png'); } */
 }
 .lesson-card.visited {
     /* Remove a sombra de relevo do bloco "?" e adiciona uma sombra mais "plana" */
@@ -93,10 +93,10 @@
         inset 1px 1px 3px rgba(0, 0, 0, 0.2), /* Sombra interna sutil */
         2px 2px 0px rgba(0, 0, 0, 0.4); /* Sombra mais escura para profundidade */
     
-    /* Imagem de fundo da parede de tijolos com overlay mais escuro */
+    /* Imagem de fundo da parede de tijolos do Minecraft com overlay mais escuro */
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Overlay mais escuro para o texto */
-        url('../../resources/images/brick-wall-bg.jpg'); /* Sua imagem da parede de tijolos */
+        url('../../resources/images/minecraft-brick-wall-bg.png'); /* Sua imagem da parede de tijolos do Minecraft */
     
     background-size: cover;
     background-position: center center;
@@ -105,12 +105,12 @@
 
 /* Ajuste da cor do texto para cards visitados */
 .lesson-card.visited a {
-    color: #F0F0F0; /* Branco acinzentado para melhor contraste com tijolo */
+    color: var(--text-light-subtle); /* Branco acinzentado para melhor contraste com tijolo */
     text-shadow: 
-        1.5px 1.5px 0px rgba(0, 0, 0, 0.8), /* Sombra preta forte */
-        -1.5px -1.5px 0px rgba(0, 0, 0, 0.8),
-        1.5px -1.5px 0px rgba(0, 0, 0, 0.8),
-        -1.5px 1.5px 0px rgba(0, 0, 0, 0.8),
+        1.5px 1.5px 0px var(--text-dark-strong), /* Sombra preta forte */
+        -1.5px -1.5px 0px var(--text-dark-strong),
+        1.5px -1.5px 0px var(--text-dark-strong),
+        -1.5px 1.5px 0px var(--text-dark-strong),
         0 0 5px rgba(255, 255, 255, 0.5); /* Brilho sutil */
 
     background-color: rgba(0, 0, 0, 0.3); /* Fundo preto 50% transparente */
@@ -119,15 +119,15 @@
 }
 
 .lesson-card.visited p {
-    color: #E0E0E0; /* Branco acinzentado mais suave */
+    color: var(--text-light-subtle); /* Branco acinzentado mais suave */
     text-shadow: 
-        1px 1px 0px rgba(0, 0, 0, 0.7), 
-        -1px -1px 0px rgba(0, 0, 0, 0.7);
+        1px 1px 0px var(--text-dark-medium), 
+        -1px -1px 0px var(--text-dark-medium);
 }
 
 /* Opcional: Ajuste do ícone de status para cards visitados, se houver um ícone específico */
 /* .lesson-card.visited .status-icon {
-    background-image: url('../resources/images/checked-icon.png');
+    background-image: url('../../resources/images/minecraft-checked-icon.png');
 } */
 
 /* --- FIM DO ESTILO DA CAIXA DA LIÇÃO --- */

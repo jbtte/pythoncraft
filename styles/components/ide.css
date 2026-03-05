@@ -1,4 +1,4 @@
-/* styles/components/_ide.css */
+/* styles/components/_ide.css (Adaptado para PythonCraft - Tema Minecraft) */
 
 /* Container que organiza o conteúdo da lição e a sidebar do IDE lado a lado */
 .lesson-layout-wrapper {
@@ -26,18 +26,20 @@
     overflow-y: auto; /* Adiciona uma barra de rolagem interna se o conteúdo da sidebar for muito longo */
     padding-bottom: 20px; /* Espaçamento na parte inferior da sidebar */
     z-index: 900; /* Garante que a sidebar fique acima de outros elementos ao rolar */
+    /* Adicionando uma sombra sutil para a sidebar como um todo, para destacá-la */
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2), 10px 10px 0px rgba(0, 0, 0, 0.05);
 }
 
 /* Estilo para a seção do IDE (dentro da sidebar) */
 .interactive-ide-section {
-    background-color: rgba(255, 255, 255, 0.95); /* Fundo claro para o IDE */
+    background-color: rgba(255, 255, 255, 0.95); /* Fundo claro para o IDE, como um bloco de pedra lisa */
     border-radius: 10px; /* Bordas arredondadas */
     padding: 20px; /* Padding interno */
-    /* Removido o margin-bottom padrão, pois o sidebar tem seu próprio espaçamento */
-    margin-bottom: 0;
-    /* Ajuste de sombra para a sidebar */
-    box-shadow: 4px 4px 0px var(--mario-dirt-brown), 8px 8px 0px rgba(0, 0, 0, 0.1);
-    border: 4px solid var(--mario-dirt-brown); /* Borda sólida */
+    margin-bottom: 0; /* Removido o margin-bottom padrão, pois o sidebar tem seu próprio espaçamento */
+    /* Ajuste de sombra para a sidebar, usando cor de terra/madeira do Minecraft */
+    box-shadow: 4px 4px 0px var(--minecraft-dirt-brown), 8px 8px 0px rgba(0, 0, 0, 0.1);
+    /* Borda sólida com cor de terra/madeira do Minecraft */
+    border: 4px solid var(--minecraft-dirt-brown); 
     text-align: left; /* Alinha o conteúdo do IDE à esquerda */
     height: 100%; /* Garante que a seção preencha a altura da sidebar */
     box-sizing: border-box; /* Inclui padding e border na altura/largura */
@@ -45,20 +47,23 @@
 
 .interactive-ide-section h2 {
     text-align: center; /* Centraliza o título da seção IDE */
-    color: var(--mario-red);
+    /* Título em vermelho, como Redstone ou Lava */
+    color: var(--minecraft-lava-orange); 
 }
 
 .python-ide-container {
-    border: 3px solid var(--mario-dirt-brown);
+    /* Borda com cor de terra/madeira do Minecraft */
+    border: 3px solid var(--minecraft-dirt-brown);
     border-radius: 8px;
     overflow: hidden;
-    background-color: #282c34; /* Fundo escuro para o editor */
+    background-color: #282c34; /* Fundo escuro para o editor (como um terminal) */
     box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
 }
 
 .editor-header, .output-header {
-    background-color: var(--mario-dirt-brown);
-    color: var(--text-light);
+    /* Cor de fundo de terra/madeira do Minecraft */
+    background-color: var(--minecraft-dirt-brown);
+    color: var(--text-light); /* Texto claro */
     font-family: var(--pixel-font);
     padding: 8px 15px;
     font-size: 0.8em;
@@ -73,17 +78,18 @@
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
-.status-loading { color: var(--mario-block-yellow); }
-.status-ready { color: var(--mario-grass-green); }
-.status-error { color: var(--mario-red); }
+/* Cores de status baseadas em elementos do Minecraft */
+.status-loading { color: var(--minecraft-block-yellow); } /* Amarelo como ouro ou tocha */
+.status-ready { color: var(--minecraft-grass-green); } /* Verde como grama ou esmeralda */
+.status-error { color: var(--minecraft-lava-orange); } /* Vermelho como lava ou redstone */
 
 #python-code-editor {
     width: 100%;
     box-sizing: border-box;
     padding: 15px;
     border: none;
-    background-color: #1c1f24;
-    color: #abb2bf;
+    background-color: #1c1f24; /* Fundo do editor mais escuro */
+    color: #abb2bf; /* Cor do texto do código */
     font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
     font-size: 0.95em;
     line-height: 1.5;
@@ -91,26 +97,31 @@
     outline: none;
 }
 
-.run-button {
+/* O botão .run-button já está definido em buttons.css, mas se precisar de sobrescrita local, este é o lugar */
+/* Mantenho a estrutura mas com variáveis Minecraft, caso você queira sobrescrever o buttons.css aqui.
+   Se não, pode remover e confiar na importação de buttons.css. */
+.run-button { 
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 12px 20px;
-    background-color: var(--mario-red);
+    /* Cor de fundo vermelha, como lava/redstone */
+    background-color: var(--minecraft-lava-orange); 
     color: var(--text-light);
     font-family: var(--pixel-font);
     font-size: 1.1em;
     border: none;
-    border-top: 3px solid var(--mario-dirt-brown);
-    border-bottom: 3px solid var(--mario-dirt-brown);
+    /* Bordas superior e inferior com cor de terra/madeira */
+    border-top: 3px solid var(--minecraft-dirt-brown);
+    border-bottom: 3px solid var(--minecraft-dirt-brown);
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
     box-shadow: inset 0 -3px 0 rgba(0,0,0,0.2);
 }
 
 .run-button:hover:not(:disabled) {
-    background-color: #FF6347;
+    background-color: #FF7F27; /* Um laranja mais claro no hover (lava ativada) */
     transform: translateY(-2px);
     box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2), 0 3px 0 rgba(0,0,0,0.2);
 }
@@ -133,8 +144,9 @@
 }
 
 .output-container {
-    border-top: 2px solid var(--mario-dirt-brown);
-    background-color: #0d1117;
+    /* Borda superior com cor de terra/madeira do Minecraft */
+    border-top: 2px solid var(--minecraft-dirt-brown);
+    background-color: #0d1117; /* Fundo do console de saída */
 }
 
 #python-output {
@@ -145,7 +157,7 @@
     white-space: pre-wrap;
     word-wrap: break-word;
     text-align: left;
-    color: #e6edf3;
+    color: #e6edf3; /* Cor do texto de saída */
     font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
     font-size: 0.95em;
     background-color: #0d1117;
@@ -169,4 +181,3 @@
         overflow-y: visible; /* Remove a barra de rolagem interna */
     }
 }
-

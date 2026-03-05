@@ -1,12 +1,17 @@
+/* styles/components/buttons.css (Adaptado para PythonCraft - Tema Minecraft) */
+
+/* Estilos para o botão "Mostrar Dica" */
 .show-hint-button {
     display: inline-block;
     padding: 8px 15px;
     margin-top: 10px; /* Espaço acima do botão */
-    background-color: var(--mario-grass-green); /* Verde como um cano */
-    color: var(--text-light);
+    /* Usando a variável de cor de grama do Minecraft */
+    background-color: var(--minecraft-grass-green);
+    color: var(--text-light); /* Texto claro */
     font-family: var(--pixel-font);
     font-size: 0.8em;
-    border: 2px solid var(--mario-dirt-brown);
+    /* Usando a variável de cor de terra do Minecraft para a borda */
+    border: 2px solid var(--minecraft-dirt-brown);
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
@@ -15,7 +20,8 @@
 
 .show-hint-button:hover {
     transform: translateY(-2px);
-    background-color: #5cb85c; /* Um verde um pouco mais claro */
+    /* Um verde um pouco mais claro, mantendo a tonalidade Minecraft */
+    background-color: #6CB26A; /* Exemplo de verde mais claro para hover */
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -47,12 +53,14 @@
 
 /* Estilos para o Botão de Controle de Música */
 .music-toggle-button {
-    background-color: var(--mario-red); /* Volta para o vermelho Mario */
+    /* Usando a variável de cor de redstone/lava do Minecraft */
+    background-color: var(--minecraft-lava-orange);
     color: var(--text-light);
     font-family: var(--pixel-font);
     font-size: 0.7em;
     padding: 5px 10px;
-    border: 2px solid var(--mario-dirt-brown); /* Borda marrom */
+    /* Usando a variável de cor de terra do Minecraft para a borda */
+    border: 2px solid var(--minecraft-dirt-brown);
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 2px 2px 0px rgba(0,0,0,0.3);
@@ -62,11 +70,11 @@
     margin-left: 20px; /* Aumentado de 10px para 20px */
 }
 
-
 .music-toggle-button:hover {
     transform: translateY(-1px);
     box-shadow: 3px 3px 0px rgba(0,0,0,0.4);
-    background-color: #FF6347; /* Vermelho mais claro no hover */
+    /* Um laranja mais claro no hover, mantendo a tonalidade Minecraft */
+    background-color: #FF7F27; /* Exemplo de laranja mais claro para hover */
 }
 
 .music-toggle-button:active {

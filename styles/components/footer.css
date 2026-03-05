@@ -1,23 +1,26 @@
-/* styles/components/_footer.css */
+/* styles/components/_footer.css (Adaptado para PythonCraft - Tema Minecraft) */
 footer {
-    background-color: var(--mario-dirt-brown);
-    color: var(--text-light);
+    /* Usando a cor de terra do Minecraft para o fundo do rodapé */
+    background-color: var(--minecraft-dirt-brown);
+    color: var(--text-light); /* Texto claro */
     padding: 20px 0;
     font-size: 0.9em;
-    position: relative;
+    position: relative; /* Ajuste para o posicionamento, se necessário */
     bottom: 0;
     width: 100%;
-    border-top: 5px solid var(--mario-block-yellow);
+    /* Borda superior com cor de bloco de ouro/amarelo do Minecraft */
+    border-top: 5px solid var(--minecraft-block-yellow);
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 footer a {
-    color: var(--text-light);
+    color: var(--text-light); /* Links em cor clara */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.2s ease;
 }
 
 footer a:hover {
-    color: var(--mario-block-yellow);
+    /* Mudar para a cor de bloco de ouro/amarelo do Minecraft no hover */
+    color: var(--minecraft-block-yellow);
 }

@@ -1,0 +1,21 @@
+/* type: "celebration" - Bloco de celebração */
+.lesson-block--celebration {
+    /* Ouro vibrante para celebração, como um bloco de ouro */
+    background-color: var(--minecraft-block-yellow); 
+    /* Borda amarela/ouro */
+    border-color: var(--minecraft-block-yellow); 
+    border-style: double; /* Borda dupla */
+    box-shadow: 8px 8px 0px var(--minecraft-block-yellow), 12px 12px 0px rgba(0,0,0,0.1);
+}
+.lesson-block--celebration h2 {
+    /* Título em vermelho, como redstone para um evento importante */
+    color: var(--minecraft-lava-orange); 
+}
+.lesson-block--celebration p {
+    font-family: var(--pixel-font); /* Texto em pixel art para celebração */
+    font-size: 1.2em;
+    /* Cor de terra/madeira para o texto */
+    color: var(--minecraft-dirt-brown); 
+    text-shadow: 1px 1px 0px var(--text-light);
+    line-height: 1.5;
+}

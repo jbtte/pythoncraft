@@ -1,92 +1,51 @@
 {
-  "title": "Dia 4 – Condicionais: if, elif e else",
+  "title": "Aula 4 – Um robô que dá bom dia",
   "concepts": [
     {
-      "type": "concept",
-      "heading": "O que são Condicionais?",
-      "text": "Hoje a gente vai aprender a tomar decisões com o nosso código! Em vez de sempre fazer a mesma coisa, podemos dizer: 'se acontecer isso, faça aquilo'. O Python faz isso com o if, elif e else."
+      "heading": "Deixando seu robô mais divertido!",
+      "text": "Você pode usar <code>print()</code> para criar mensagens animadas, com emojis e arte feita com texto. Isso deixa seu programa mais vivo!"
     },
     {
-      "type": "image",
-      "heading": "Escolhas no código: se... senão...",
-      "image_placeholder": "imagem de um personagem entre duas portas com 'if' e 'else'",
-      "image_url": "resources/images/lesson_illustrations/lesson_04_ifelse.jpg"
+      "heading": "Robô simpático com emojis",
+      "text": "Emojis são só caracteres, então você pode colocá-los entre aspas normalmente.",
+      "code": "print(\"🤖 Bom dia, humano!\")"
     },
     {
-      "type": "comment",
-      "heading": "💡 Exemplo do mundo real",
-      "text": "Pense assim: 'Se estiver chovendo, levo guarda-chuva. Senão, vou sem.' Isso é uma condicional."
+      "heading": "Criando uma carinha com texto",
+      "text": "Também dá para desenhar uma 'arte ASCII' com <code>print()</code>:",
+      "code": "print(\"[° ͜ʖ °]\")\nprint(\"Olá! Eu sou o Robô Bob!\")"
     },
     {
-      "type": "concept",
-      "heading": "if: Fazendo algo se a condição for verdadeira",
-      "text": "A palavra `if` significa 'se'. Com ela, o computador testa uma condição. Se for verdadeira, ele executa o que está dentro do bloco indentado (com espaço).",
-      "code": "idade = 12\nif idade >= 18:\n    print(\"Você é maior de idade\")"
+      "heading": "Usando várias linhas para montar o robô",
+      "text": "Você pode fazer o rosto, o corpo e até os braços com símbolos.",
+      "code": "print(\"  [=^.^=]  \")\nprint(\" /|\\  \")\nprint(\" / \\\")"
     },
     {
-      "type": "question",
-      "heading": "❓ DÚVIDA COMUM: O que é >= ?",
-      "text": "Esse símbolo quer dizer 'maior ou igual'. Então `idade >= 18` significa: a idade é maior ou igual a 18?"
-    },
-    {
-      "type": "concept",
-      "heading": "if‑else: Decisão binária",
-      "text": "Com `else`, dizemos o que fazer se a condição for falsa. Assim cobrimos os dois casos possíveis:",
-      "code": "n = 7\nif n % 2 == 0:\n    print(\"Par\")\nelse:\n    print(\"Ímpar\")"
-    },
-    {
-      "type": "question",
-      "heading": "❓ DÚVIDA COMUM: O que significa % 2 == 0?",
-      "text": "Esse código testa se o número é divisível por 2 (ou seja, se é par). `%` é o 'resto da divisão'."
-    },
-    {
-      "type": "concept",
-      "heading": "if‑elif‑else: Múltiplas escolhas",
-      "text": "Quando temos mais de duas opções, usamos `elif` (que vem de 'else if'). Podemos ter quantos `elif` quisermos!",
-      "code": "nota = 75\nif nota < 30:\n    print(\"Reprovado\")\nelif nota < 50:\n    print(\"Recuperação\")\nelse:\n    print(\"Aprovado\")"
-    },
-    {
-      "type": "tip",
-      "heading": "Dica de indentação",
-      "text": "Sempre use 4 espaços para o bloco dentro do if. O Python usa esse espaço para saber o que está dentro e o que está fora da condição."
-    },
-    {
-      "type": "question",
-      "heading": "❓ E se eu esquecer os dois pontos (:) depois do if?",
-      "text": "O Python vai dar erro! Sempre coloque `:` depois do `if`, `elif` e `else` para indicar que vem um bloco."
+      "heading": "Aprendizados da aula",
+      "text": "<ul>\n  <li>Uso criativo do <code>print()</code></li>\n  <li>Adição de emojis e arte em texto (ASCII)</li>\n  <li>Estímulo visual e expressividade no código</li>\n</ul>"
     }
   ],
   "exercises": [
     {
-      "type": "exercise",
-      "prompt": "1. Peça um número ao usuário e imprima se ele é par ou ímpar.",
-      "code_hint": "n = int(input(\"Digite um número: \"))\nif n % 2 == 0:\n    print(\"Par\")\nelse:\n    print(\"Ímpar\")"
+      "prompt": "1. Faça seu robô dar bom dia com um emoji diferente.",
+      "code_hint": "print(\"👾 Bom dia, piloto!\")"
     },
     {
-      "type": "exercise",
-      "prompt": "2. Peça a idade do usuário e diga se ele é maior (>=18) ou menor (<18) de idade.",
-      "code_hint": "idade = int(input(\"Idade: \"))\nif idade >= 18:\n    print(\"Maior de idade\")\nelse:\n    print(\"Menor de idade\")"
+      "prompt": "2. Crie uma arte simples com símbolos e uma frase do robô.",
+      "code_hint": "print(\"[ *-* ]\")\nprint(\"Olá, meu nome é Robozinho!\")"
     },
     {
-      "type": "exercise",
-      "prompt": "3. Peça uma nota (0–100). Use if/elif/else para classificar: < 30 = Reprovado; < 50 = Recuperação; ≥ 50 = Aprovado.",
-      "code_hint": "nota = int(input(\"Nota: \"))\nif nota < 30:\n    print(\"Reprovado\")\nelif nota < 50:\n    print(\"Recuperação\")\nelse:\n    print(\"Aprovado\")"
-    },
-    {
-      "type": "challenge",
-      "prompt": "4. *Desafio:* Peça duas notas do aluno e calcule a média. Classifique com base na média: < 5 = Reprovado; < 7 = Recuperação; ≥ 7 = Aprovado.",
-      "code_hint": "n1 = float(input(\"Nota 1: \"))\nn2 = float(input(\"Nota 2: \"))\nmedia = (n1 + n2)/2\nif media < 5:\n    print(\"Reprovado\")\nelif media < 7:\n    print(\"Recuperação\")\nelse:\n    print(\"Aprovado\")"
+      "prompt": "3. Escreva uma frase em que o robô diz algo engraçado com um emoji.",
+      "code_hint": "print(\"Meu café favorito é óleo de engrenagem ☕🤖\")"
     }
   ],
   "project": {
-    "type": "project",
-    "name": "Classificador de notas",
-    "description": "Crie um programa que pede nome, duas notas e dá a média e o resultado final.",
-    "goal": "Praticar `input`, `float`, `if`, `elif`, `else` e f-strings."
+    "name": "Robô fala com emoção e emojis",
+    "description": "Vamos criar um robô simpático que aparece na tela com um rosto feito de texto e fala frases animadas com emojis.",
+    "goal": "Explorar o <code>print()</code> de forma visual e criativa, desenvolvendo familiaridade com símbolos e expressividade em código."
   },
-  "video_suggestion": {
-    "type": "video",
-    "text": "Para mais explicações, veja este vídeo em português que mostra condicional IF, ELIF e ELSE na prática:",
-    "url": "https://www.youtube.com/watch?v=7oJtcrukTwM"
+  "media": {
+    "video_suggestion": "https://www.youtube.com/watch?v=ifx6jzJf3B4",
+    "visual_aid": "Desenho de um robô sorridente feito com caracteres e emojis"
   }
 }

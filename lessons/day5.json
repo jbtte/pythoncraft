@@ -1,75 +1,46 @@
 {
-  "title": "Dia 5 – Projeto: Gerador de Histórias (Mad Libs)",
+  "title": "Aula 5 – Qual é sua cor favorita?",
   "concepts": [
     {
-      "type": "explanation",
-      "heading": "Vamos criar um jogo com sua imaginação!",
-      "text": "Hoje vamos brincar de inventar histórias engraçadas usando palavras que você escolher. É como preencher os espaços em branco de uma história maluca! Esse tipo de jogo se chama Mad Libs."
+      "heading": "Fazendo perguntas com <code>input()</code>",
+      "text": "Agora o computador pode conversar com você! Usamos <code>input()</code> para perguntar algo e esperar sua resposta.",
+      "code": "cor = input(\"Qual é sua cor favorita? \")\nprint(\"Uau! Eu também gosto da cor \" + cor + \"!\")"
     },
     {
-      "type": "image",
-      "heading": "Frases malucas com espaços em branco",
-      "image_placeholder": "imagem de um formulário digital divertido onde o jogador preenche palavras como 'um lugar', 'um animal', 'uma comida', e vê a frase engraçada aparecer",
-      "image_url": "resources/images/lesson_illustrations/lesson_05_madlibs.jpg"
+      "heading": "Guardando a resposta em uma variável",
+      "text": "A palavra que a pessoa digitar fica guardada dentro de uma variável, como <code>cor</code>, para você usar depois."
     },
     {
-      "type": "explanation",
-      "heading": "Como funciona esse jogo?",
-      "text": "Você vai pedir algumas palavras ao usuário, como nome, animal, comida, lugar... Depois, o programa vai usar essas palavras para montar uma história. Cada vez que rodar o jogo, a história muda dependendo das respostas!"
+      "heading": "Criando uma frase divertida com a resposta",
+      "text": "Você pode usar a resposta para criar algo engraçado, como transformar a cor em um monstro ou objeto maluco.",
+      "code": "print(\"Cuidado! Um Monstro \" + cor + \" está chegando!\")"
     },
     {
-      "type": "code",
-      "heading": "Exemplo divertido",
-      "code": "animal = input(\"Digite um animal: \")\ncor = input(\"Digite uma cor: \")\nprint(f\"Era uma vez um {animal} muito {cor} que vivia na floresta.\")",
-      "text": "O computador pede as palavras e depois junta tudo. Parece mágica, mas é só código bem montado!"
-    },
-    {
-      "type": "question",
-      "heading": "⚠️ DÚVIDA COMUM: Por que usar f-string?",
-      "text": "**Porque é mais fácil e organizado!** Com `f\"texto {variavel}\"`, o Python sabe exatamente onde colocar cada palavra."
-    },
-    {
-      "type": "tip",
-      "heading": "Dica do professor: escreva a história antes",
-      "text": "Antes de começar a programar, escreva sua história num papel ou no caderno. Substitua algumas palavras por espaços, como: 'Era uma vez um __ que morava no __'. Essas lacunas vão virar `input()` no código!"
-    },
-    {
-      "type": "objective",
-      "heading": "O que você vai aprender",
-      "text": "• Criar um programa divertido do zero\n• Usar `input()` para pegar dados do usuário\n• Montar frases com `f-strings`\n• Praticar criatividade e organização no código"
+      "heading": "Aprendizados da aula",
+      "text": "<ul>\n  <li>Uso de <code>input()</code> para entrada de dados</li>\n  <li>Variável recebendo texto do usuário</li>\n  <li>Interação básica com o programa</li>\n</ul>"
     }
   ],
   "exercises": [
     {
-      "type": "exercise",
-      "prompt": "1. Peça pelo menos 5 palavras ao usuário: nome, lugar, cor, comida e animal.",
-      "code_hint": "nome = input(\"Digite um nome: \")\nlugar = input(\"Digite um lugar: \")\ncor = input(\"Digite uma cor: \")\ncomida = input(\"Digite uma comida: \")\nanimal = input(\"Digite um animal: \")"
+      "prompt": "1. Pergunte a cor favorita da pessoa e repita a cor em uma frase divertida.",
+      "code_hint": "cor = input(\"Qual é sua cor favorita? \")\nprint(\"Essa é a cor dos dragões mágicos: \" + cor + \"!\")"
     },
     {
-      "type": "exercise",
-      "prompt": "2. Use essas palavras para montar uma história engraçada com f-string.",
-      "code_hint": "print(f\"Um dia, {nome} foi ao {lugar} com um {animal} {cor}. Lá, eles comeram muito {comida} e ficaram felizes para sempre!\")"
+      "prompt": "2. Use a resposta para inventar um personagem colorido.",
+      "code_hint": "print(\"Hoje vamos conhecer o Robô \" + cor + \"zinho!\")"
     },
     {
-      "type": "exercise",
-      "prompt": "3. Desafio: invente uma história mais longa com verbos e adjetivos.",
-      "code_hint": "verbo = input(\"Digite um verbo: \")\nadjetivo = input(\"Digite um adjetivo: \")\nprint(f\"Era uma vez um {animal} muito {adjetivo} que adorava {verbo}. Ele conheceu {nome} no {lugar} e comeram {comida} juntos.\")"
-    },
-    {
-      "type": "exercise",
-      "prompt": "4. Extra: salve a história em um arquivo .txt",
-      "code_hint": "with open(\"minha_historia.txt\", \"w\") as arquivo:\n    arquivo.write(f\"Era uma vez {nome} e um {animal} {cor} que... (sua história aqui)\")"
+      "prompt": "3. Desafio: pergunte também o nome da pessoa e use na resposta.",
+      "code_hint": "nome = input(\"Qual é seu nome? \")\nprint(\"Olá, \" + nome + \"! Seu dragão da cor \" + cor + \" está pronto!\")"
     }
   ],
   "project": {
-    "type": "project",
-    "name": "Gerador de Histórias Malucas",
-    "description": "Crie um programa que peça palavras e monte uma história engraçada com elas. Use sua criatividade!",
-    "goal": "Treinar `input()`, `f-string`, organização do código e aplicar tudo o que aprendeu de forma divertida."
+    "name": "Programa responde com frase engraçada",
+    "description": "Vamos fazer o computador perguntar a sua cor favorita e responder com uma frase divertida usando a resposta.",
+    "goal": "Aprender <code>input()</code> e como usar a resposta do usuário para personalizar o programa com criatividade."
   },
-  "video_suggestion": {
-    "type": "video",
-    "text": "Vídeo em inglês com legendas mostrando passo a passo como criar um Mad Libs em Python:",
-    "url": "https://www.youtube.com/watch?v=GdBV4irqOd8"
+  "media": {
+    "video_suggestion": "https://www.youtube.com/watch?v=poXjX3L5fFA",
+    "visual_aid": "Imagem de um dragão ou robô mudando de cor conforme a escolha do jogador"
   }
 }

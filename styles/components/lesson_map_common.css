@@ -1,3 +1,5 @@
+/* styles/components/lesson_cards.css (or lesson_map.css) - Adaptado para PythonCraft (Tema Minecraft) */
+
 /* Contêiner das Lições - O "Mapa" ou "Fases" (para index.html) */
 .lesson-map-container {
     background-color: transparent;
@@ -10,45 +12,49 @@
     position: relative;
     z-index: 1;
 
-    /* Imagem de fundo da seção de lições */
-    background-image: url('../../resources/images/lessons-section-bg.png');
-    background-size: repeat;
+    /* Imagem de fundo da seção de lições - deve ser uma textura de mapa ou terreno do Minecraft */
+    background-image: url('../../resources/images/minecraft-lessons-section-bg.png'); /* Caminho da sua imagem de fundo do mapa/terreno Minecraft */
+    background-size: cover; /* Melhor para cobrir toda a área com uma imagem de mapa */
     background-position: center center;
     min-height: 500px;
     border-radius: 10px;
     overflow: hidden;
     padding-top: 50px;
     padding-bottom: 50px;
+    
+    /* Adiciona uma borda exterior ou sombra que remeta a um bloco grande */
+    border: 5px solid var(--minecraft-dirt-brown); /* Borda sólida de terra/madeira */
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada para dar profundidade de bloco */
 }
 
-/* --- ALTERAÇÃO AQUI: Título e Parágrafo da Seção de Lições --- */
+/* --- Título e Parágrafo da Seção de Lições --- */
 .lesson-map-container h2 {
-    grid-column: 1 / -1;
+    grid-column: 1 / -1; /* Ocupa todas as colunas no grid */
     text-align: center;
     margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para o texto */
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-    /* Cor do texto: Mais claro, talvez o amarelo ou um branco */
-    color: var(--mario-block-yellow); /* Amarelo vibrante do Bloco '?' */
-    /* text-shadow: Sombra mais escura para destacar */
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7); /* Sombra mais escura e definida */
+    /* Cor do texto: Amarelo de bloco de ouro/questão do Minecraft */
+    color: var(--minecraft-block-yellow);
+    /* Sombra de texto mais escura e definida para destacar */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7); 
 }
 
 .lesson-map-container .map-intro-text {
-    grid-column: 1 / -1;
+    grid-column: 1 / -1; /* Ocupa todas as colunas no grid */
     text-align: center;
     font-family: var(--pixel-font);
-    /* Cor do texto: Mais claro, como o branco */
-    color: var(--text-light); /* Branco/cinza claro */
+    /* Cor do texto: Branco/cinza claro do Minecraft */
+    color: var(--text-light); 
     font-size: 1.1em;
-    /* text-shadow: Sombra mais escura e definida */
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5); /* Sombra mais escura */
+    /* Sombra de texto mais escura e definida */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5); 
     margin-top: -10px;
     margin-bottom: 30px;
     line-height: 1.4;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente para o texto */
     padding: 5px 10px;
     border-radius: 0;
     box-shadow: none;

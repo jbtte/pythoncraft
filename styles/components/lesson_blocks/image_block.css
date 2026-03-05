@@ -1,0 +1,24 @@
+/* type: "image" - Bloco de imagem */
+.lesson-block--image {
+    background-color: #E0E0E0; /* Cinza claro para moldura da imagem, como pedra clara */
+    border-color: var(--minecraft-stone-gray); /* Borda de pedra */
+    padding: 10px; /* Padding menor */
+    box-shadow: 4px 4px 0px var(--minecraft-stone-gray);
+}
+.lesson-block--image .image-placeholder p {
+    color: #555; /* Cor do texto do placeholder */
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+/* Se for uma imagem real, estilizar a tag img */
+.lesson-block--image img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove espaçamento extra abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+    /* Borda de terra/madeira para a imagem */
+    border: 2px solid var(--minecraft-dirt-brown); 
+    box-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+}

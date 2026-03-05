@@ -1,0 +1,16 @@
+/* type: "video" - Bloco de vídeo */
+.lesson-block--video {
+    /* Fundo azul do céu do Minecraft */
+    background-color: var(--minecraft-sky-blue); 
+    /* Borda marrom de terra/madeira */
+    border-color: var(--minecraft-dirt-brown); 
+    box-shadow: 6px 6px 0px var(--minecraft-dirt-brown), 10px 10px 0px rgba(0,0,0,0.1);
+}
+.lesson-block--video h2 {
+    color: var(--text-light); /* Título branco */
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+}
+.lesson-block--video p {
+    color: var(--text-light); /* Texto branco */
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+}

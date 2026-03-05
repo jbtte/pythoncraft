@@ -1,33 +1,41 @@
-/* styles/components/_hero.css */
+/* styles/components/_hero.css (Adapted for PythonCraft - Minecraft Theme) */
 .hero-section {
+    /* Use a Minecraft-themed background image, e.g., a pixelated landscape */
     background-image: url('../../resources/images/hero-section-bg.png');
-    background-color: var(--mario-sky-blue);
-    color: var(--text-light);
+    /* Use Minecraft sky blue for the background color fallback */
+    background-color: var(--minecraft-sky-blue);
+    color: var(--text-light); /* Light text for contrast */
     padding: 60px 20px;
-    border-radius: 10px;
+    border-radius: 10px; /* Slightly rounded corners for block-like elements */
     margin-bottom: 30px;
-    box-shadow: 5px 5px 0px var(--mario-dirt-brown), 10px 10px 0px rgba(0, 0, 0, 0.1);
-    border: 3px solid var(--mario-dirt-brown);
+    /* Box shadow to give a 3D, block-like appearance */
+    box-shadow: 5px 5px 0px var(--minecraft-dirt-brown), 10px 10px 0px rgba(0, 0, 0, 0.1);
+    /* Border to define the block shape */
+    border: 3px solid var(--minecraft-dirt-brown);
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /* Ensures content stays within bounds */
+    background-size: cover; /* Cover the entire section with the background image */
+    background-position: center; /* Center the background image */
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    /* Semi-transparent background for content overlay */
     background-color: rgba(0, 0, 0, 0.3);
     padding: 20px;
     border-radius: 8px;
-    display: flex; /* Transforma em um contêiner flexível */
-    flex-direction: column; /* Organiza os itens em coluna */
-    align-items: center; /* Centraliza os itens horizontalmente (incluindo o botão) */
-    
+    display: flex; /* Makes it a flex container */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally (including the button) */
 }
 
 .hero-section h2 {
     font-family: var(--pixel-font);
     font-size: 2.2em;
-    color: var(--mario-block-yellow);
+    /* Use a vibrant Minecraft color for the heading, like gold or lava */
+    color: var(--minecraft-block-yellow);
+    /* Text shadow for a blocky, 3D effect */
     text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
     margin-top: 0;
 }
@@ -41,21 +49,24 @@
 .start-adventure-button {
     display: inline-flex;
     align-items: center;
-    background-color: var(--mario-red);
+    /* Use a strong Minecraft action color, like redstone or vibrant ore */
+    background-color: var(--minecraft-lava-orange); 
     color: var(--text-light);
     font-family: var(--pixel-font);
     font-size: 1.2em;
     padding: 15px 30px;
     border-radius: 10px;
     text-decoration: none;
-    box-shadow: 5px 5px 0px var(--mario-dirt-brown);
+    /* Box shadow for a 3D block button effect */
+    box-shadow: 5px 5px 0px var(--minecraft-dirt-brown);
     transition: transform 0.1s ease, box-shadow 0.1s ease;
-    border: 3px solid var(--mario-dirt-brown);
+    /* Border to define the button's edge */
+    border: 3px solid var(--minecraft-dirt-brown);
 }
 
 .start-adventure-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 8px 8px 0px var(--mario-dirt-brown);
+    transform: translateY(-3px); /* Button "jumps" on hover */
+    box-shadow: 8px 8px 0px var(--minecraft-dirt-brown); /* More pronounced shadow */
 }
 
 .start-adventure-button .button-icon {
